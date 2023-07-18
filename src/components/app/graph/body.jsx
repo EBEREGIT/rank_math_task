@@ -10,28 +10,28 @@ import { AppContext } from "../../../context";
 export default function Body() {
   const { tabValues, selectedTab } = useContext(AppContext);
 
-  // dummy data
+  // data
   const data = [
     {
-      uv: tabValues[selectedTab] * 1500,
+      uv: tabValues[selectedTab] * 350,
     },
     {
-      uv: 2500,
+      uv: 400,
     },
     {
-      uv: tabValues[selectedTab] * 2200,
+      uv: tabValues[selectedTab] * 320,
     },
     {
-      uv: 3000,
+      uv: 300,
     },
     {
-      uv: tabValues[selectedTab] * 2700,
+      uv: tabValues[selectedTab] * 470,
     },
     {
-      uv: tabValues[selectedTab] * 5.483,
+      uv: tabValues[selectedTab] * 300.483,
     },
     {
-      uv: 5300,
+      uv: 530,
     },
   ];
 
@@ -39,7 +39,7 @@ export default function Body() {
     <>
       {/* graph */}
       <div style={styles.container}>
-        <ResponsiveContainer width={`100%`} height={150}>
+        <ResponsiveContainer width={`100%`} height={200}>
           <AreaChart
             data={data}
             margin={{ top: 50, right: 30, left: 0, bottom: 0 }}
@@ -73,10 +73,12 @@ export default function Body() {
 
 const styles = {
   container: {
-    position: "relative",
+    // position: "relative",
   },
   aside: {
     width: `${SIZES.xSmall * 5}%`,
     marginLeft: SIZES.large,
+    position: "absolute",
+    top: SIZES.large * 10
   },
 };
