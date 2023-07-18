@@ -35,7 +35,7 @@ const styles = {
     marginLeft: ml,
     marginRight: mr,
     backgroundColor: COLORS.white,
-    borderRadius: SIZES.xxLarge,
+    borderRadius: SIZES.medium,
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",

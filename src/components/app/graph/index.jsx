@@ -17,7 +17,7 @@ const styles = {
     paddingTop: SIZES.large,
     paddingRight: SIZES.large,
     backgroundColor: COLORS.white,
-    borderRadius: SIZES.large,
+    borderRadius: SIZES.medium,
     position: "relative",
   },
 };
