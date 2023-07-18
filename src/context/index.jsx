@@ -10,6 +10,7 @@ export default function AppProvider({ children }) {
   const [menuToggle, setMenuToggle] = useState(true);
   const [btnToggle, setBtnToggle] = useState(true);
   const [selectedTab, setSelectedTab] = useState("Day");
+  const [selectedFooterTab, setSelectedFooterTab] = useState("Day");
   const tabValues = {
     Day: 1,
     Week: 7,
@@ -27,6 +28,8 @@ export default function AppProvider({ children }) {
         selectedTab,
         setSelectedTab,
         tabValues,
+        selectedFooterTab,
+        setSelectedFooterTab,
       }}
     >
       {children}

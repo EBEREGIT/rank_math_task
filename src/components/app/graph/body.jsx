@@ -67,8 +67,5 @@ const styles = {
   aside: {
     width: `${SIZES.xSmall * 5}%`,
     marginLeft: SIZES.large,
-    // position: "absolute",
-    // top: `${SIZES.xSmall * 7.5}%`,
-    // left: SIZES.large,
   },
 };

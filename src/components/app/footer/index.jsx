@@ -7,10 +7,10 @@ import { COLORS, SIZES } from "../../../constant";
 const Footer = () => {
   return (
     <div style={styles.container}>
-      <MenuItem icon={<FaRadio />} />
-      <MenuItem icon={<FaMapMarkerAlt />} />
-      <MenuItem icon={<FaBell />} />
-      <MenuItem icon={<AiFillSetting />} />
+      <MenuItem icon={<FaRadio />} name={"FaRadio"} />
+      <MenuItem icon={<FaMapMarkerAlt />} name={"FaMapMarkerAlt"} />
+      <MenuItem icon={<FaBell />} name={"FaBell"} />
+      <MenuItem icon={<AiFillSetting name={"AiFillSetting"} />} />
     </div>
   );
 };
