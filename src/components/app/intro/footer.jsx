@@ -28,6 +28,7 @@ const Footer = () => {
       <section
         style={styles.iconContainer}
         onClick={() => toggle(btnToggle, setBtnToggle)}
+        className="clickable"
       >
         <NavIcon
           icon={btnToggle ? <FaChevronDown /> : <FaChevronUp />}

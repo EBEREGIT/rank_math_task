@@ -5,11 +5,15 @@ import PropTypes from "prop-types";
 import NavIcon from "../../elements/navIcon";
 import { SIZES } from "../../../constant";
 
-const Item = ({ icon, size, color, name, showHR, textColor }) => {
+const Item = ({ icon, size, color, name, showHR, textColor, handleClick }) => {
   return (
     <>
       {/* menu item for the dropdown menu */}
-      <section style={styles.container}>
+      <section
+        style={styles.container}
+        onClick={handleClick}
+        className="clickable"
+      >
         <p style={textColor ? { color: textColor } : styles.text}>{name}</p>
         <NavIcon icon={icon} size={size} color={color} />
       </section>
@@ -43,6 +47,7 @@ Item.propTypes = {
   name: PropTypes.string,
   showHR: PropTypes.bool,
   textColor: PropTypes.string,
+  handleClick: PropTypes.func,
 };
 
 export default Item;

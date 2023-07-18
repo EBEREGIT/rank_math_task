@@ -13,7 +13,7 @@ const MenuItem = ({ icon, name }) => {
   return (
     <>
       {/* menu item for the footer navigation */}
-      <div onClick={() => setSelectedFooterTab(name)}>
+      <div onClick={() => setSelectedFooterTab(name)} className="clickable">
         <NavIcon
           icon={icon}
           size={SIZES.large * 1.5}

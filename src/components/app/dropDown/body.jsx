@@ -10,8 +10,13 @@ import { MdIosShare } from "react-icons/md";
 import Background from "../../elements/Card/background";
 import Item from "./item";
 import { COLORS, SIZES } from "../../../constant";
+import { toggle } from "../../../lib/functions";
+import { useContext } from "react";
+import { AppContext } from "../../../context";
 
 const Body = () => {
+  const { menuToggle, setMenuToggle } = useContext(AppContext);
+
   return (
     // looping through dropdown menu item
     <Background
@@ -32,6 +37,7 @@ const Body = () => {
               "red",
               "Remove",
               false,
+              () => toggle(menuToggle, setMenuToggle),
             ],
           ].map((item, index) => (
             <Item
@@ -42,6 +48,7 @@ const Body = () => {
               textColor={item[2]}
               name={item[3]}
               showHR={item[4]}
+              handleClick={item[5]}
             />
           ))}
         </>

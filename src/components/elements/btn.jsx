@@ -5,7 +5,11 @@ import { COLORS, SIZES } from "../../constant";
 import PropTypes from "prop-types";
 
 const Btn = ({ name }) => {
-  return <button style={styles.btn}>{name}</button>;
+  return (
+    <button style={styles.btn} className="clickable">
+      {name}
+    </button>
+  );
 };
 
 Btn.propTypes = {
@@ -23,7 +27,7 @@ const styles = {
     borderRadius: SIZES.medium,
     paddingLeft: SIZES.xxLarge,
     paddingRight: SIZES.xxLarge,
-    color: COLORS.text
+    color: COLORS.text,
   },
 };
 

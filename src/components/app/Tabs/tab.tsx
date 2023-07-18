@@ -13,6 +13,7 @@ const Tab = ({ name }) => {
     <section
       style={selectedTab !== name ? {} : styles.container}
       onClick={() => setSelectedTab(name)}
+      className="clickable"
     >
       <p style={selectedTab !== name ? styles.p : styles.pClicked}>{name}</p>
     </section>

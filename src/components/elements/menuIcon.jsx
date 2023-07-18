@@ -13,6 +13,7 @@ const MenuIcon = ({ icon, size, color, style }) => {
   return (
     <section
       style={style}
+      className="clickable"
       onClick={() => toggle(menuToggle, setMenuToggle)}
     >
       <NavIcon icon={icon} size={size} color={color} />

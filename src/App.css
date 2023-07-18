@@ -13,10 +13,12 @@ hr {
 
 .shadow {
   box-shadow: 4px 5px 10px 4px #e1e6ee;
+  transition: box-shadow 2s;
 }
 
 .shadow:hover{
   box-shadow: none;
+  transition: box-shadow 2s;
 }
 
 p, h1, h2, h3, h4 {
@@ -36,4 +38,8 @@ p, h1, h2, h3, h4 {
 
 .recharts-surface {
   border-radius: 20px;
+}
+
+.clickable {
+  cursor: pointer;
 }

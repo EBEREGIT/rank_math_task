@@ -22,7 +22,7 @@ const Navigation = () => {
         />
       </aside>
 
-      {/* heading/logo */}
+      {/* heading logo */}
       <section>
         <h2 style={styles.h2}>Bitcoin Wallet</h2>
       </section>
