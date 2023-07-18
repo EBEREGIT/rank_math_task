@@ -10,11 +10,12 @@ const ListItem = ({ name, color, price, fontWeightAdjuster, removeColon }) => {
     <section style={styles.section}>
       <aside
         style={{
-          border: `3.5px solid ${color}`,
+          border: `5px solid ${color}`,
           width: `1px`,
           height: `1px`,
           borderRadius: `${SIZES.xSmall}px`,
           marginRight: `${SIZES.xSmall}px`,
+          backgroundColor: `${color}`,
         }}
       ></aside>
       <p

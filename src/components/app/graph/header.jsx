@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import ListItem from "../../elements/listItem";
 import { COLORS, SIZES } from "../../../constant";
 
-// eslint-disable-next-line no-unused-vars
 const Header = () => {
   return (
     <header style={styles.container}>
