@@ -4,7 +4,7 @@ import Header from "./header";
 
 const Graph = () => {
   return (
-    <div style={styles.container}>
+    <div style={styles.container} className="shadow">
       <Header />
       <Body />
     </div>

@@ -3,10 +3,14 @@
 }
 
 hr {
-  border: 0.1px solid #E1E6EE;
+  border: 0.1px solid #e1e6ee;
 }
 
 .icon_style {
   margin-top: -7px;
   margin-left: -7px;
+}
+
+.shadow {
+  box-shadow: 4px 5px 10px 4px #e1e6ee;
 }

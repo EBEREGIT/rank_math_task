@@ -6,7 +6,7 @@ import Header from "./header";
 
 const Intro = () => {
   return (
-    <main style={styles.container}>
+    <main style={styles.container} className="shadow">
       <Background
         content={
           <>

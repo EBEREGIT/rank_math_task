@@ -5,7 +5,7 @@ import { COLORS, SIZES } from "../../../constant";
 
 const TransactionBTN = ({ name, bgColor, mr, ml }) => {
   return (
-    <aside style={styles.container(mr, ml)}>
+    <aside style={styles.container(mr, ml)} className="shadow">
       <>
         <CircleIcon
           icon={<BsCurrencyDollar />}
