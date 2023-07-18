@@ -1,5 +1,8 @@
+// external import
 import { useContext } from "react";
 import PropTypes from "prop-types";
+
+// internal import
 import { toggle } from "../../lib/functions";
 import { AppContext } from "../../context";
 import NavIcon from "./navIcon";

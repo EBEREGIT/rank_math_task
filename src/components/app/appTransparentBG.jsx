@@ -1,4 +1,7 @@
+// external import
 import { useContext } from "react";
+
+// internal import
 import { COLORS, SIZES } from "../../constant";
 import { AppContext } from "../../context";
 import { toggle } from "../../lib/functions";

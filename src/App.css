@@ -20,18 +20,16 @@ hr {
 }
 
 p, h1, h2, h3, h4 {
-  animation-duration: .5s;
+  animation-duration: 1s;
   animation-name: slidein;
 }
 
 @keyframes slidein {
   from {
-    margin-left: 100%;
-    width: 70%;
+    margin-left: 20%;
   }
 
   to {
     margin-left: 0%;
-    width: 100%;
   }
 }

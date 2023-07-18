@@ -1,34 +1,43 @@
+// external import
 import { AreaChart, Tooltip, Area, ResponsiveContainer } from "recharts";
+
+// internal import
 import ListItem from "../../elements/listItem";
 import { COLORS, SIZES } from "../../../constant";
-
-const data = [
-  {
-    uv: 1500,
-  },
-  {
-    uv: 2500,
-  },
-  {
-    uv: 2200,
-  },
-  {
-    uv: 2700,
-  },
-  {
-    uv: 3000,
-  },
-  {
-    uv: 2300,
-  },
-  {
-    uv: 2500,
-  },
-];
+import { useContext } from "react";
+import { AppContext } from "../../../context";
 
 export default function Body() {
+  const { tabValues, selectedTab } = useContext(AppContext);
+
+  // dummy data
+  const data = [
+    {
+      uv: tabValues[selectedTab] * 1500,
+    },
+    {
+      uv: 2500,
+    },
+    {
+      uv: tabValues[selectedTab] * 2200,
+    },
+    {
+      uv: 3000,
+    },
+    {
+      uv: tabValues[selectedTab] * 2700,
+    },
+    {
+      uv: tabValues[selectedTab] * 5.483,
+    },
+    {
+      uv: 5300,
+    },
+  ];
+
   return (
     <>
+      {/* graph */}
       <div style={styles.container}>
         <ResponsiveContainer width={`100%`} height={150}>
           <AreaChart
@@ -48,6 +57,7 @@ export default function Body() {
         </ResponsiveContainer>
       </div>
 
+      {/* label */}
       <aside style={styles.aside}>
         <ListItem
           name={"1BTC ="}

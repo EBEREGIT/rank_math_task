@@ -1,8 +1,11 @@
+// external import
 import { IoIosArrowBack, IoMdMore } from "react-icons/io";
+import { useContext } from "react";
+
+// internal import
 import NavIcon from "../../elements/navIcon";
 import { COLORS, SIZES } from "../../../constant";
 import MenuIcon from "../../elements/menuIcon";
-import { useContext } from "react";
 import { AppContext } from "../../../context";
 
 const Navigation = () => {

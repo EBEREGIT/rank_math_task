@@ -1,13 +1,28 @@
+// external import
 import PropTypes from "prop-types";
+
+// internal import
 import ListItem from "../../elements/listItem";
 import { COLORS, SIZES } from "../../../constant";
 
 const Header = () => {
   return (
-    <header style={styles.container}>
-      <ListItem name={"Lower"} price={4.895} color={COLORS.pink} />
-      <ListItem name={"higher"} price={6.857} color={COLORS.green} />
-    </header>
+    <>
+      {/* looping through footer menu item */}
+      <header style={styles.container}>
+        {[
+          ["Lower", 4.895, COLORS.pink],
+          ["Higher", 6.857, COLORS.green],
+        ].map((item, index) => (
+          <ListItem
+            key={index}
+            name={item[0]}
+            price={item[1]}
+            color={item[2]}
+          />
+        ))}
+      </header>
+    </>
   );
 };
 

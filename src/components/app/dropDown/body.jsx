@@ -1,15 +1,19 @@
-import { COLORS, SIZES } from "../../../constant";
+// external import
 import {
   IoMdInformationCircleOutline,
   IoIosRemoveCircleOutline,
 } from "react-icons/io";
 import { FaRegEdit } from "react-icons/fa";
 import { MdIosShare } from "react-icons/md";
+
+// internal import
 import Background from "../../elements/Card/background";
 import Item from "./item";
+import { COLORS, SIZES } from "../../../constant";
 
 const Body = () => {
   return (
+    // looping through dropdown menu item
     <Background
       content={
         <>

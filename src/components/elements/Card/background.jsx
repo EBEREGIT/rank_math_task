@@ -1,4 +1,7 @@
+// external import
 import PropTypes from "prop-types";
+
+// internal import
 import { COLORS, SIZES } from "../../../constant";
 
 const Background = ({ content }) => {

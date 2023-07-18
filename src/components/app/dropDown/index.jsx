@@ -1,6 +1,9 @@
-import { COLORS, SIZES } from "../../../constant";
+// external import
 import { IoIosMore } from "react-icons/io";
 import { useContext } from "react";
+
+// internal import
+import { COLORS, SIZES } from "../../../constant";
 import { AppContext } from "../../../context";
 import Body from "./body";
 import MenuIcon from "../../elements/menuIcon";
@@ -13,6 +16,7 @@ const DropDown = () => {
       style={styles.container}
       className={menuToggle ? "app_transparent_bg_hidden" : ""}
     >
+      {/* menu icon */}
       <MenuIcon
         icon={<IoIosMore />}
         size={SIZES.large * 1.5}
@@ -20,6 +24,7 @@ const DropDown = () => {
         style={styles.header}
       />
 
+      {/* menu items */}
       <Body />
     </section>
   );

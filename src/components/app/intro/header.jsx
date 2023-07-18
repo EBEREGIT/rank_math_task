@@ -1,5 +1,8 @@
+// internal import
 import { COLORS, SIZES } from "../../../constant";
 import CircleIcon from "../../elements/circleIcon";
+
+// external import
 import { BsCurrencyBitcoin } from "react-icons/bs";
 
 const Header = () => {

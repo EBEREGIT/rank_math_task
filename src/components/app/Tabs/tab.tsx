@@ -1,7 +1,9 @@
+// external import
 import PropTypes from "prop-types";
-import React from "react";
+import React, { useContext } from "react";
+
+// internal import
 import { COLORS, SIZES } from "../../../constant";
-import { useContext } from "react";
 import { AppContext } from "../../../context";
 
 const Tab = ({ name }) => {

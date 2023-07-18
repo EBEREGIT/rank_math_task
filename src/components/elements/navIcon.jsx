@@ -1,4 +1,7 @@
+// external import
 import PropTypes from "prop-types";
+
+// internal import
 import { IconContext } from "react-icons";
 
 const NavIcon = ({ icon, size, color, className }) => {

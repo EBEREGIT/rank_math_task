@@ -1,6 +1,9 @@
+// external import
 import PropTypes from "prop-types";
-import { COLORS, SIZES } from "../../constant";
 import { useContext } from "react";
+
+// internal import
+import { COLORS, SIZES } from "../../constant";
 import { AppContext } from "../../context";
 
 const ListItem = ({ name, color, price, fontWeightAdjuster, removeColon }) => {
@@ -8,6 +11,7 @@ const ListItem = ({ name, color, price, fontWeightAdjuster, removeColon }) => {
 
   return (
     <section style={styles.section}>
+      {/* list decoration color */}
       <aside
         style={{
           border: `5px solid ${color}`,
@@ -18,6 +22,8 @@ const ListItem = ({ name, color, price, fontWeightAdjuster, removeColon }) => {
           backgroundColor: `${color}`,
         }}
       ></aside>
+
+      {/* list name */}
       <p
         style={{
           color: COLORS.text,
@@ -28,6 +34,8 @@ const ListItem = ({ name, color, price, fontWeightAdjuster, removeColon }) => {
           {name}
           {removeColon ?? ":"}{" "}
         </span>
+
+        {/* list value */}
         <span>${(price * tabValues[selectedTab]).toFixed(2)}</span>
       </p>
     </section>

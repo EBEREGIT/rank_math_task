@@ -1,4 +1,7 @@
+// internal import
 import { COLORS, SIZES } from "../../constant";
+
+// external import
 import PropTypes from "prop-types";
 
 const Btn = ({ name }) => {
