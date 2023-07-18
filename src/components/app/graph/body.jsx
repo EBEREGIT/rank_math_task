@@ -63,6 +63,7 @@ export default function Body() {
 
 const styles = {
   container: {
+    position: "relative",
   },
   aside: {
     width: `${SIZES.xSmall * 5}%`,

@@ -18,7 +18,7 @@ const AppTransparentBG = () => {
 const styles = {
   container: {
     backgroundColor: COLORS.black,
-    height: `${SIZES.xSmall * 10}vh`,
+    height: `${SIZES.xSmall * 10}%`,
     width: `${SIZES.xSmall * 10}%`,
     position: "absolute",
     top: 0,
