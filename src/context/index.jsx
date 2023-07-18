@@ -10,7 +10,7 @@ export default function AppProvider({ children }) {
   const [menuToggle, setMenuToggle] = useState(true);
   const [btnToggle, setBtnToggle] = useState(true);
   const [selectedTab, setSelectedTab] = useState("Day");
-  const [selectedFooterTab, setSelectedFooterTab] = useState("Day");
+  const [selectedFooterTab, setSelectedFooterTab] = useState("FaRadio");
   const tabValues = {
     Day: 1,
     Week: 7,
