@@ -1,0 +1,12 @@
+.app_transparent_bg_hidden {
+  visibility: hidden;
+}
+
+hr {
+  border: 0.1px solid #E1E6EE;
+}
+
+.icon_style {
+  margin-top: -7px;
+  margin-left: -7px;
+}
