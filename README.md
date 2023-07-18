@@ -1,5 +1,5 @@
 # Rank Math Task
-This Repo contains the solution to Rank Math Frontend Task.
+This Repo contains the solution to Rank Math Frontend Task. You can view the output at https://rank-math-task.netlify.app/.
 
 ## Dependencies
 * [React](https://react.dev/)
