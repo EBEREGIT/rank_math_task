@@ -17,8 +17,8 @@ const Footer = () => {
       {/* buy and sell buttons */}
       {!btnToggle ? (
         <div style={styles.btnContainer}>
-          <Btn name={"Buy"} />
-          <Btn name={"Sell"} />
+          <Btn name={"Buy"} classes={"blue_btn"} />
+          <Btn name={"Sell"} classes={"pink_btn"}/>
         </div>
       ) : (
         ""
@@ -49,6 +49,7 @@ const styles = {
     flexDirection: "row",
     justifyContent: "space-evenly",
     alignItems: "center",
+    marginTop: SIZES.xxLarge,
   },
   iconContainer: {
     textAlign: "center",

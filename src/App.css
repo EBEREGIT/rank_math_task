@@ -3,7 +3,7 @@
 }
 
 hr {
-  border: 0.1px solid #e1e6ee;
+  border: 0.1px solid var(--shadow);
 }
 
 .icon_style {
@@ -12,7 +12,7 @@ hr {
 }
 
 .shadow {
-  box-shadow: 4px 5px 10px 4px #e1e6ee;
+  box-shadow: 4px 5px 10px 4px var(--shadow);
   transition: box-shadow 2s;
 }
 
@@ -104,4 +104,38 @@ h4 {
     #fc3698,
     #fd319a
   );
+}
+
+button {
+  background-color: var(--site_white);
+  padding: 12px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text1);
+  border: 0;
+  outline: 0;
+  width: 100px;
+  border-radius: 50px;
+  transition: width 1s, background-color 1s;
+}
+
+button:hover {
+  color: #fefeff;
+  width: 200px;
+}
+
+.blue_btn {
+  border: 1px solid var(--blue);
+}
+
+.blue_btn:hover {
+  background-color: var(--blue);
+}
+
+.pink_btn {
+  border: 1px solid var(--pink);
+}
+
+.pink_btn:hover {
+  background-color: var(--pink);
 }
