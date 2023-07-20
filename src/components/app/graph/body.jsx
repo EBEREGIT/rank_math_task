@@ -80,6 +80,8 @@ const styles = {
     width: `${SIZES.xSmall * 5}%`,
     marginLeft: SIZES.large,
     position: "absolute",
-    top: SIZES.large * 10
+    bottom: SIZES.large,
+    paddingBottom: SIZES.xxSmall,
+    paddingLeft: SIZES.xxSmall,
   },
 };

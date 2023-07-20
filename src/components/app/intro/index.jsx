@@ -22,9 +22,14 @@ const Intro = () => {
 
 const styles = {
   container: {
-    margin: SIZES.large,
-    paddingTop: SIZES.large,
-    paddingRight: SIZES.large,
+    marginLeft: SIZES.large + 20,
+    marginRight: SIZES.large + 20,
+    marginTop: SIZES.large + 5,
+    marginBottom: SIZES.large + 5,
+    paddingTop: SIZES.large + 5,
+    paddingRight: SIZES.large + 5,
+    paddingBottom: SIZES.xxSmall,
+    paddingLeft: SIZES.xxSmall,
     backgroundColor: COLORS.white,
     borderRadius: SIZES.medium,
   },

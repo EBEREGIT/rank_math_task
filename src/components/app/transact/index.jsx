@@ -28,6 +28,10 @@ const styles = {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    marginLeft: SIZES.large + 20,
+    marginRight: SIZES.large + 20,
+    marginTop: SIZES.large + 5,
+    marginBottom: SIZES.large + 5,
   },
 };
 

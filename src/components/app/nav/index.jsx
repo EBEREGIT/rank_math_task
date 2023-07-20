@@ -59,10 +59,10 @@ const styles = {
     marginTop: -7.5,
   },
   left: {
-    paddingLeft: SIZES.medium,
+    paddingLeft: SIZES.large,
   },
   right: {
-    paddingRight: SIZES.medium,
+    paddingRight: SIZES.large,
   },
 };
 

@@ -39,6 +39,7 @@ const styles = {
     flexDirection: "row",
     justifyContent: "space-between",
     marginLeft: SIZES.large,
+    paddingLeft: SIZES.xxSmall,
   },
 };
 

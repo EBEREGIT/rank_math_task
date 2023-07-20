@@ -17,7 +17,7 @@ const styles = {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    width: `${SIZES.xSmall * 8.5}%`,
+    width: `${SIZES.xSmall * 8}%`,
     margin: "auto",
   },
 };
