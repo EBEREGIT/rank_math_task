@@ -22,8 +22,8 @@ const Intro = () => {
 
 const styles = {
   container: {
-    marginLeft: SIZES.large + 20,
-    marginRight: SIZES.large + 20,
+    marginLeft: SIZES.large + 10,
+    marginRight: SIZES.large + 10,
     marginTop: SIZES.large + 5,
     marginBottom: SIZES.large + 5,
     paddingTop: SIZES.large + 5,
