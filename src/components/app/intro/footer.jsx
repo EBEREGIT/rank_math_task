@@ -1,5 +1,5 @@
 // external import
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { GoChevronDown, GoChevronUp } from "react-icons/go";
 import { useContext } from "react";
 
 // internal import
@@ -31,8 +31,8 @@ const Footer = () => {
         className="clickable"
       >
         <NavIcon
-          icon={btnToggle ? <FaChevronDown /> : <FaChevronUp />}
-          size={SIZES.large * 1.5}
+          icon={btnToggle ? <GoChevronDown /> : <GoChevronUp />}
+          size={SIZES.large * 2}
           color={COLORS.icon}
         />
       </section>

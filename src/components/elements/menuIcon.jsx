@@ -7,7 +7,7 @@ import { toggle } from "../../lib/functions";
 import { AppContext } from "../../context";
 import NavIcon from "./navIcon";
 
-const MenuIcon = ({ icon, size, color, style }) => {
+const MenuIcon = ({ icon, size, color, style, className }) => {
   const { menuToggle, setMenuToggle } = useContext(AppContext);
 
   return (
@@ -16,7 +16,7 @@ const MenuIcon = ({ icon, size, color, style }) => {
       className="clickable"
       onClick={() => toggle(menuToggle, setMenuToggle)}
     >
-      <NavIcon icon={icon} size={size} color={color} />
+      <NavIcon icon={icon} size={size} color={color} className={className} />
     </section>
   );
 };
@@ -25,6 +25,7 @@ MenuIcon.propTypes = {
   icon: PropTypes.element.isRequired,
   size: PropTypes.number,
   color: PropTypes.string,
+  className: PropTypes.string,
   style: PropTypes.object,
 };
 

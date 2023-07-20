@@ -19,6 +19,8 @@ const Header = () => {
             name={item[0]}
             price={item[1]}
             color={item[2]}
+            fontWeightAdjuster={15}
+            textColor={COLORS.gray3}
           />
         ))}
       </header>

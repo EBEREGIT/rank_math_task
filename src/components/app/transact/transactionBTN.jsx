@@ -3,7 +3,7 @@ import CircleIcon from "../../elements/circleIcon";
 import { BsCurrencyDollar } from "react-icons/bs";
 import { COLORS, SIZES } from "../../../constant";
 
-const TransactionBTN = ({ name, bgColor, mr, ml }) => {
+const TransactionBTN = ({ name, className, mr, ml }) => {
   return (
     <aside style={styles.container(mr, ml)} className="shadow">
       <>
@@ -11,7 +11,7 @@ const TransactionBTN = ({ name, bgColor, mr, ml }) => {
           icon={<BsCurrencyDollar />}
           size={SIZES.large * 1.5}
           color={COLORS.white}
-          bgColor={bgColor}
+          className={className}
         />
 
         <h4 style={styles.h4}>{name} BTC</h4>
@@ -22,7 +22,7 @@ const TransactionBTN = ({ name, bgColor, mr, ml }) => {
 
 TransactionBTN.propTypes = {
   name: PropTypes.string,
-  bgColor: PropTypes.string,
+  className: PropTypes.string,
   mr: PropTypes.number,
   ml: PropTypes.number,
 };
@@ -43,6 +43,7 @@ const styles = {
   }),
   h4: {
     marginTop: SIZES.medium,
+    color: COLORS.text1
   },
 };
 

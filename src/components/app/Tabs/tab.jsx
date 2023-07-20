@@ -1,6 +1,6 @@
 // external import
 import PropTypes from "prop-types";
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 // internal import
 import { COLORS, SIZES } from "../../../constant";
@@ -26,7 +26,7 @@ Tab.propTypes = {
 
 const styles = {
   container: {
-    backgroundColor: COLORS.text,
+    backgroundColor: COLORS.gray3,
     paddingTop: SIZES.xxSmall,
     paddingBottom: SIZES.xxSmall,
     paddingRight: SIZES.xLarge,
@@ -34,12 +34,13 @@ const styles = {
     borderRadius: SIZES.xxLarge,
   },
   p: {
-    color: COLORS.text,
-    fontWeight: SIZES.xSmall * 50,
+    color: COLORS.gray3,
+    fontWeight: SIZES.xSmall * 70,
   },
   pClicked: {
     color: COLORS.background,
-    fontWeight: SIZES.xSmall * 50,
+    fontWeight: SIZES.xSmall * 70,
+
   },
 };
 

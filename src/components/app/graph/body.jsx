@@ -51,7 +51,7 @@ export default function Body() {
               stroke="#f7931a"
               strokeWidth={3.5}
               fillOpacity={1}
-              fill="#fef4e8"
+              fill="#fef7ec"
             />
           </AreaChart>
         </ResponsiveContainer>
@@ -63,8 +63,9 @@ export default function Body() {
           name={"1BTC ="}
           price={5.483}
           color={COLORS.orange}
-          fontWeightAdjuster={25}
+          fontWeightAdjuster={18}
           removeColon={true}
+          textColor={COLORS.text1}
         />
       </aside>
     </>

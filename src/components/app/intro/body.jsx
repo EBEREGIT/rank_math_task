@@ -3,7 +3,7 @@ import { COLORS, SIZES } from "../../../constant";
 const Body = () => {
   return (
     <main style={styles.container}>
-      <h1>3.529020 BTC</h1>
+      <h1 style={styles.h1}>3.529020 BTC</h1>
 
       <section style={styles.section}>
         <h2 style={styles.h3a}>$19.153 USD</h2>
@@ -21,13 +21,17 @@ const styles = {
     width: `${SIZES.large * 5}%`,
     marginTop: SIZES.medium,
   },
+  h1:{
+    color: COLORS.text1,
+    fontWeight: SIZES.large * 30
+  },
   h3a:{
-    color: COLORS.gray2,
-    fontWeight: "bold"
+    color: COLORS.gray3,
+    fontWeight: SIZES.large * 30
   },
   h3b:{
     color: COLORS.white,
-    fontWeight: "bold"
+    fontWeight: SIZES.large * 30
   },
   section:{
     display: "flex",

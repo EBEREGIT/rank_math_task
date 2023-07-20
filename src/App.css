@@ -16,12 +16,16 @@ hr {
   transition: box-shadow 2s;
 }
 
-.shadow:hover{
+.shadow:hover {
   box-shadow: none;
   transition: box-shadow 2s;
 }
 
-p, h1, h2, h3, h4 {
+p,
+h1,
+h2,
+h3,
+h4 {
   animation-duration: 1s;
   animation-name: slidein;
 }
@@ -42,4 +46,62 @@ p, h1, h2, h3, h4 {
 
 .clickable {
   cursor: pointer;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.orange_bg_gradient {
+  background-image: linear-gradient(
+    to left top,
+    #f7932d,
+    #f5942e,
+    #f3962f,
+    #f29731,
+    #f09832,
+    #f09c35,
+    #efa138,
+    #efa53c,
+    #f0ad43,
+    #f1b64a,
+    #f2be51,
+    #f3c659
+  );
+}
+
+.blue_bg_gradient {
+  background-image: linear-gradient(
+    to right bottom,
+    #17b7fc,
+    #16b5fb,
+    #16b3fa,
+    #16b0f9,
+    #16aef8,
+    #0daaf7,
+    #04a5f6,
+    #00a1f5,
+    #0099f4,
+    #0091f2,
+    #1289ef,
+    #2380ec
+  );
+}
+
+.pink_bg_gradient {
+  background-image: linear-gradient(
+    to bottom,
+    #fc5982,
+    #fb5684,
+    #fb5286,
+    #fa4f89,
+    #f94c8b,
+    #f9498d,
+    #f9468f,
+    #f94391,
+    #fa3f93,
+    #fb3b95,
+    #fc3698,
+    #fd319a
+  );
 }

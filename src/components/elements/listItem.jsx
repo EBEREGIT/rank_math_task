@@ -3,10 +3,17 @@ import PropTypes from "prop-types";
 import { useContext } from "react";
 
 // internal import
-import { COLORS, SIZES } from "../../constant";
+import { SIZES } from "../../constant";
 import { AppContext } from "../../context";
 
-const ListItem = ({ name, color, price, fontWeightAdjuster, removeColon }) => {
+const ListItem = ({
+  name,
+  color,
+  price,
+  fontWeightAdjuster,
+  removeColon,
+  textColor,
+}) => {
   const { tabValues, selectedTab } = useContext(AppContext);
 
   return (
@@ -26,7 +33,7 @@ const ListItem = ({ name, color, price, fontWeightAdjuster, removeColon }) => {
       {/* list name */}
       <p
         style={{
-          color: COLORS.text,
+          color: textColor,
           fontWeight: SIZES.xxLarge * fontWeightAdjuster,
         }}
       >
@@ -48,6 +55,7 @@ ListItem.propTypes = {
   price: PropTypes.number,
   removeColon: PropTypes.bool,
   fontWeightAdjuster: PropTypes.number,
+  textColor: PropTypes.string,
 };
 
 const styles = {

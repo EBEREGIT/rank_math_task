@@ -1,5 +1,6 @@
 // external import
-import { IoIosArrowBack, IoMdMore } from "react-icons/io";
+import { MdMoreVert } from "react-icons/md";
+import { GoChevronLeft } from "react-icons/go";
 import { useContext } from "react";
 
 // internal import
@@ -16,9 +17,10 @@ const Navigation = () => {
       {/* back icon */}
       <aside style={styles.left}>
         <NavIcon
-          icon={<IoIosArrowBack />}
-          size={SIZES.large * 1.5}
-          color={COLORS.icon}
+          icon={<GoChevronLeft />}
+          size={SIZES.large * 2}
+          color={COLORS.gray3}
+          className="bold"
         />
       </aside>
 
@@ -30,9 +32,10 @@ const Navigation = () => {
       {/* menu */}
       <aside style={styles.right}>
         <MenuIcon
-          icon={<IoMdMore />}
-          size={SIZES.large * 1.5}
-          color={menuToggle ? COLORS.text : COLORS.white}
+          icon={<MdMoreVert />}
+          size={SIZES.large * 2}
+          color={menuToggle ? COLORS.gray3 : COLORS.white}
+          className="bold"
         />
       </aside>
     </nav>
@@ -52,7 +55,7 @@ const styles = {
     width: `${SIZES.xSmall * 10}%`,
   },
   h2: {
-    color: COLORS.text,
+    color: COLORS.text1,
     marginTop: -7.5,
   },
   left: {

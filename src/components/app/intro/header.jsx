@@ -14,7 +14,7 @@ const Header = () => {
             icon={<BsCurrencyBitcoin />}
             size={SIZES.large * 1.5}
             color={COLORS.white}
-            bgColor={COLORS.orange}
+            className={"orange_bg_gradient"}
           />
           <p style={styles.p1}>Bitcoin</p>
         </aside>
@@ -36,11 +36,14 @@ const styles = {
   },
   p1: {
     marginLeft: SIZES.large,
-    color: COLORS.black,
+    color: COLORS.text1,
+    fontWeight: SIZES.large * 30
   },
   p2: {
     marginLeft: SIZES.large,
-    color: COLORS.text,
+    color: COLORS.gray3,
+    fontWeight: SIZES.large * 30
+
   },
 };
 

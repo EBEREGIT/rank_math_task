@@ -5,12 +5,13 @@ const Transact = () => {
   return (
     <div style={styles.container}>
       {[
-        ["Buy", COLORS.blue],
-        ["Sell", COLORS.pink],
+        ["Buy", COLORS.blue, "blue_bg_gradient"],
+        ["Sell", COLORS.pink, "pink_bg_gradient"],
       ].map((item, index) => (
         <TransactionBTN
           name={item[0]}
           bgColor={item[1]}
+          className={item[2]}
           key={index}
           mr={item[0] === "Sell" ? SIZES.medium : 0}
           ml={item[0] === "Buy" ? SIZES.medium : 0}
